@@ -1,0 +1,784 @@
+ /*
+ ---------------------
+   HOMEPAGE ABOUT 01
+ ---------------------
+ */
+
+ .index {
+    &__about {
+       padding: 100px 0;
+       position: relative;
+       width: 100%;
+
+       &-shape1 {
+          position: absolute;
+          z-index: -2;
+          bottom: 0;
+          left: 0;
+
+       }
+
+       .about-wp {
+          width: 1366px;
+          margin: 0 auto;
+       }
+
+       &-tractor {
+          position: absolute;
+          right: 50px;
+          bottom: -182px;
+
+          @include mq(xll) {
+             max-width: 333px;
+          }
+
+          @include mq(xll) {
+             max-width: 268px;
+          }
+
+          @include mq(lg) {
+             max-width: 200px;
+          }
+
+          @include mq(sm) {
+             max-width: 94px;
+             bottom: -88px;
+          }
+       }
+
+       &-left {
+          position: relative;
+          text-align: center;
+
+          &::before {
+             content: "";
+             left: 0;
+             bottom: 0;
+             position: absolute;
+          }
+
+          span {
+             font-size: 40px;
+             font-weight: 700;
+             text-align: left;
+             color: $white;
+             font-family: $Barlow;
+             display: block;
+             background-color: $theme-yellow;
+             max-width: 310px;
+             padding: 30px 60px;
+
+             @include mq(lg) {
+                font-size: 30px;
+             }
+          }
+       }
+
+       &-right {
+          padding-left: 60px;
+
+          @include mq(md) {
+             padding-left: 20px;
+          }
+       }
+
+       &-mainImg {
+          margin-bottom: -12px;
+
+          @include mq(lg) {
+             width: 50%;
+          }
+       }
+
+       &-shape1 {
+          @include mq(lg) {
+             max-width: 390px;
+          }
+       }
+
+       &-middle {
+          display: flex;
+          margin-bottom: 40px;
+          gap: 30px;
+
+          img {
+             @include mq(lg) {
+                display: none;
+             }
+          }
+       }
+
+       &-list {
+          span {
+             font-size: 22px;
+             font-weight: 700;
+             font-family: $Barlow;
+             text-align: left;
+             color: #000000;
+             display: block;
+             margin-bottom: 10px;
+          }
+
+          li {
+             font-size: 17px;
+             font-weight: 400;
+             font-family: $Rubik;
+             margin-bottom: 8px;
+             color: #636363;
+          }
+       }
+
+       &-title {
+          font-size: 40px;
+          font-weight: bold;
+          font-family: $Barlow;
+          color: #18181C;
+          margin-bottom: 20px;
+
+          @include mq(lg) {
+             font-size: 28px;
+          }
+
+          @include mq(xl) {
+             font-size: 32px;
+          }
+       }
+
+       .about-paragraph {
+          font-size: 15px;
+          font-family: "Rubik", sans-serif !important;
+          padding-right: 70px;
+       }
+    }
+ }
+
+ /*
+ ---------------------
+   HOMEPAGE ABOUT 02
+ ---------------------
+ */
+
+ .contoll {
+    &__about-thumb2 img {
+       width: 100%;
+    }
+
+    &__about {
+       background-color: rgb(241, 247, 252);
+       position: relative;
+       //  margin-top: 194px;
+       margin-top: 100px;
+
+       @include mq(lg) {
+          padding-bottom: 50px;
+       }
+
+       &-rcontent {
+          padding-top: 100px;
+          text-align: left;
+
+          @include mq(sm) {
+             padding-top: 30px;
+          }
+       }
+
+       &-dis {
+          font-size: 17px;
+          font-family: $Rubik;
+
+          @include mq(xl) {
+             font-size: 15px;
+          }
+       }
+
+       &-pdis {
+          font-size: 22px;
+          font-weight: 700;
+          font-family: $Barlow;
+          color: #000000;
+          text-decoration: underline;
+
+          @include mq(xl) {
+             font-size: 20px;
+          }
+       }
+
+       &-thumb1 {
+          margin-top: -214px;
+
+          img {
+             @include mq(xl) {
+                width: 100%;
+             }
+
+             @include mq(sm) {
+                width: 70%;
+             }
+          }
+       }
+
+       &-list {
+          padding-top: 20px;
+
+          li {
+             img {
+                padding-right: 10px;
+             }
+          }
+       }
+
+       &-bb {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          background: #fff;
+          border-radius: 50px;
+          padding: 10px 25px;
+          margin-top: 40px;
+          margin-bottom: 100px;
+
+          .bbleft {
+             display: flex;
+          }
+
+          @include mq(xl) {
+             margin-top: 10px;
+             padding-bottom: 30px;
+          }
+
+          @include mq(lg) {
+             margin-top: 30px;
+          }
+
+          @include mq(sm) {
+             flex-wrap: wrap;
+             gap: 30px;
+             border-radius: 0;
+             margin-bottom: 30px;
+          }
+
+          @include mq(md) {
+             margin-bottom: 30px;
+          }
+       }
+
+       &-bsec {
+          background-image: url('../img/about/26+.png');
+          background-repeat: no-repeat;
+          background-size: cover;
+          height: 135px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          padding-left: 70px;
+
+          @include mq(lg) {
+             background-size: 100% 100%;
+             margin-top: 30px;
+          }
+
+          @include mq(sm) {
+             padding-left: 0;
+             margin-top: 30px;
+          }
+       }
+
+       &-btitle {
+          font-size: 40px;
+          font-weight: 700;
+          color: $white;
+          font-family: $Barlow;
+
+          @include mq(xl) {
+             font-size: 28px;
+          }
+
+          @include mq(sm) {
+             font-size: 30px;
+          }
+       }
+
+       &-videowrapper {
+          a {
+             display: inline-block;
+             height: 50px;
+             width: 50px;
+             border-radius: 50px;
+             background: $theme-yellow;
+             color: $white;
+             line-height: 50px;
+             text-align: center;
+          }
+
+          span {
+             text-decoration: underline;
+             font-size: 18px;
+             text-underline-offset: 5px;
+          }
+       }
+
+       &-footer {
+          background: $theme-yellow;
+          color: $white;
+          text-align: center;
+          padding: 20px 130px;
+
+          @include mq(lx) {
+             padding: 16px 41px;
+             font-size: 15px;
+             margin-top: -72px;
+          }
+
+          @include mq(lg) {
+             display: none;
+          }
+       }
+    }
+ }
+
+ .contoll__about-bbleft {
+    display: flex;
+    align-items: center;
+    gap: 11px;
+
+    img {
+       @include mq(xl) {
+          width: 60px;
+       }
+    }
+
+    h4 {
+       @include mq(xl) {
+          font-size: 20px;
+       }
+    }
+
+    span {
+       @include mq(xl) {
+          font-size: 16px;
+       }
+    }
+ }
+
+ .contoll__about {
+    position: relative;
+ }
+
+ .hamer-right {
+    position: absolute;
+    top: -270px;
+    right: 60px;
+ }
+
+ /*
+ ---------------------
+   HOMEPAGE ABOUT 03
+ ---------------------
+ */
+
+ .contolll__about {
+    position: relative;
+ }
+
+
+ .contolll {
+
+    &__about-left {
+       overflow: hidden;
+    }
+
+    &__about {
+       padding: 100px 0;
+
+       &-itemwrapper {
+          position: relative;
+       }
+
+       &-item {
+          background: $offwhite;
+          padding: 30px;
+          padding-right: 0;
+          padding-bottom: 20px;
+
+       }
+
+       &-thumbhigh {
+
+          font-family: "Roboto", sans-serif;
+          font-weight: 700;
+          font-size: 22px;
+          color: #fff;
+          display: block;
+          background: rgb(255, 94, 20);
+          position: absolute;
+          left: 7.3%;
+          bottom: 38%;
+          padding: 20px;
+          transform: rotateZ(-90deg);
+          text-decoration: underline;
+          border: 10px solid #fff;
+          animation: animateLineBar linear infinite 4s;
+
+          @keyframes animateLineBar {
+             0% {
+                bottom: 340px;
+             }
+
+             50% {
+                bottom: 500px;
+             }
+
+             100% {
+                bottom: 340px;
+             }
+          }
+       }
+
+       &-btnwrap {
+          padding-top: 30px;
+       }
+
+       &-thumb {
+          position: relative;
+       }
+
+       &-ithumb {
+          display: flex;
+          gap: 30px;
+          align-items: center;
+          position: relative;
+          z-index: 2;
+          margin-bottom: 15px;
+          overflow: hidden;
+          background: $theme-yellow;
+          border-radius: 25px 0px 0px 25px;
+       }
+
+       &-ithumbwrap {
+          background: $primaryColor;
+          padding: 10px;
+          border-radius: 50px;
+       }
+
+       &-ititle {
+          font-family: $Barlow;
+          font-size: 22px;
+          font-weight: 700;
+          color: $white;
+
+       }
+
+       &-idis {
+          font-size: 17px;
+          color: #636363;
+          font-family: $Rubik !important;
+       }
+
+       &-list {
+          display: flex;
+          flex-wrap: wrap;
+
+          & li {
+             width: 50%;
+             padding-bottom: 10px;
+
+             img {
+                padding-right: 10px;
+             }
+          }
+       }
+
+       &-center {
+          margin-bottom: 40px;
+       }
+    }
+ }
+
+ .contolll__about-item:hover .contolll__about-ithumb {
+    background: $primaryColor;
+ }
+
+ .contolll__about-item:hover .contolll__about-ithumbwrap {
+    background: $theme-yellow;
+ }
+
+ //  .contolll__about-item:hover .contolll__about-ithumb::before {
+ //     content: "";
+ //     position: absolute;
+ //     left: 20px;
+ //     top: 0;
+ //     height: 100%;
+ //     width: 100%;
+ //     background: $theme-yellow;
+ //     z-index: -2;
+ //  }
+
+
+
+ /*
+ ---------------------
+   HOMEPAGE ABOUT 04
+ ---------------------
+ */
+
+ .contollll {
+    &__about {
+       padding-top: 100px;
+       overflow: hidden;
+
+       &-thumb1 {
+          img {
+             width: 100%;
+          }
+       }
+
+       &-left {
+          position: relative;
+       }
+
+       &-smimg {
+          position: absolute;
+          bottom: 0;
+          left: -100px;
+       }
+
+       &-footer {
+          background: $theme-yellow;
+          color: $white;
+          text-align: center;
+          padding: 20px 130px;
+          text-decoration: underline;
+       }
+    }
+ }
+
+ .contolll__testimonial-disinner {
+    color: $theme-yellow;
+ }
+
+ /*
+ ---------------------
+   HOMEPAGE ABOUT 05
+ ---------------------
+ */
+
+ .aboutTopImg {
+    position: absolute;
+    top: 0;
+    right: 80px;
+    width: 150px;
+ }
+
+
+ // responsive
+
+ @media screen and (max-width: 1500px) {
+    .contolll__about-thumbhigh {
+       display: none;
+    }
+ }
+
+
+ @media screen and (max-width: 1400px) {
+    .index__about {
+       .about-wp {
+          width: 100% !important;
+       }
+    }
+
+    .hamer-right {
+       display: none;
+    }
+ }
+
+ @media screen and (max-width: 992px) {
+    .index__about {
+       .index__about-tractor {
+          display: none;
+       }
+
+       .about-wp {
+          width: 100% !important;
+
+          .about-medius {
+             width: 100%;
+
+             .index__about-left {
+                .index__about-shape1 {
+                   margin: 0 auto;
+                }
+             }
+          }
+       }
+    }
+
+    .index__about-title {
+       font-size: 34px;
+    }
+
+    .contollll__about-smimg {
+       display: none;
+    }
+
+    .contollll__about-footer {
+       padding: 20px 33px;
+    }
+
+    .contoll__about-bb {
+       padding-bottom: 10px;
+    }
+
+    .contolll__about-thumb {
+       text-align: center;
+    }
+
+    .about__hero-title {
+       font-size: 56px !important;
+    }
+
+ }
+
+ @media screen and (max-width: 770px) {
+    .index__about-shape1 {
+       display: none;
+    }
+
+    .index__about {
+       .index__about-tractor {
+          display: none;
+       }
+
+       .about-wp {
+          .aboit {
+             width: 100% !important;
+          }
+
+          width: 100% !important;
+
+          .about-medius {
+             width: 100%;
+
+             .index__about-left {
+                padding-left: 20px !important;
+
+                .index__about-shape1 {
+                   margin: 0 auto;
+                }
+             }
+          }
+       }
+    }
+
+    .contoll__about-thumb1 {
+       //  width: 60%;
+       margin: 0 auto;
+    }
+
+    .contoll__about-thumb2 {
+       width: 85%;
+       margin: 0 auto;
+    }
+
+    .contolll__about-thumb {
+       text-align: center;
+    }
+ }
+
+ // Responsive screen size 768px
+
+ @media screen and (max-width: 768px) {
+    .index__about-title {
+       font-size: 27px;
+    }
+
+    .contolll__about-list li {
+       font-size: 11px;
+    }
+
+    .aboutTopImg {
+       display: none;
+    }
+
+    .newABout {
+       // display: block;
+    }
+
+    .contoll__about-videowrapper span {
+       display: none;
+    }
+
+ }
+
+
+
+ @media screen and (max-width: 767px) {
+    .index__about-right {
+       margin-top: 60px !important;
+    }
+
+ }
+
+ // Responsive screen size 576px
+
+ @media screen and (max-width: 576px) {
+    .index__about-right {
+       margin-top: 60px !important;
+       text-align: center;
+    }
+
+    .index__about-middle {
+       display: block;
+    }
+    .index__about-list span {
+      text-align: center;
+      margin-top: 32px;
+      margin-bottom: 23px;
+  }
+
+    .index__about {
+       .index__about-tractor {
+          display: none;
+       }
+
+       .about-wp {
+          width: 100% !important;
+
+          .about-medius {
+             width: 100%;
+
+             .index__about-left {
+                padding-left: 20px !important;
+
+                .index__about-shape1 {
+                   margin: 0 auto;
+                }
+             }
+          }
+       }
+    }
+
+    .about-shape-img {
+       display: none;
+    }
+ }
+
+ @media screen and (max-width: 450px) {
+    .about-contoll-nav {
+       display: none !important;
+    }
+ }
+
+ @media screen and (max-width: 400px) {
+    .contolll__about-list li img {
+       padding-right: 3px;
+    }
+
+    .contolll__about-list li {
+       font-size: 9px;
+    }
+
+    .index__about-title {
+       font-size: 21px;
+    }
+
+ }

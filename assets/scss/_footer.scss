@@ -1,0 +1,225 @@
+ /*
+ ---------------------
+   HOMEPAGE FOOTER 01
+ ---------------------
+ */
+
+.index{
+   &__footer{
+      background: url('/assets/img/logo/footer-shape.png');
+      background-position: center center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-color: rgba(3, 44, 91, 0.975);
+      padding: 75px 0;
+      position: relative;
+      overflow: hidden;
+      padding-bottom: 0;
+      @include mq(sm){
+         padding-left: 15px;
+      }
+      &::before{
+         content: "";
+         position: absolute;
+         height: 100%;
+         width: 100%;
+         left: 0;
+         top: 0;
+         background-image: url('../img/logo/footer-shape.png');
+         background-repeat: no-repeat;
+         background-size: cover;
+         z-index: -1;
+      }
+      &-dis{
+         font-size: 17px;
+         font-family: $Rubik;
+         color: $white;
+         padding-top: 30px;
+         @media (max-width: 1024px) {
+            font-size: 15px;
+         }
+      }
+      &-fsocial{
+         gap: 10px;
+         display: flex;
+         padding-top: 20px;
+         :hover{
+            background: $theme-yellow;
+            border: $white;
+            color: $white;
+         }
+         li{
+            height: 40px;
+            width: 40px;
+            border-radius: 50%;
+            text-align: center;
+            background-color: $white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            a{
+               color: $theme-yellow;
+            }
+         }
+      }
+      &-service{
+         h4{
+            color: $white;
+            font-size: 22px;
+            font-family: $Barlow;
+            font-weight: 700;
+            margin-left: -13px;
+         }
+      }
+      &-list{
+         padding-top: 35px;
+         li{
+            margin-bottom: 15px;
+            position: relative;
+            padding-left: 3px;
+            &::before{
+               position: absolute;
+               content: "";
+               left: -12px;
+               top: 5px;
+               width: 15px;
+               height: 15px;
+               background-color: #fff;
+               clip-path: polygon(43% 48%, 0 0, 0 100%);
+               @media (max-width: 1024px) {
+                  width: 12px;
+                  height: 10px;
+               }
+            }
+            a{
+               font-family: $Rubik;
+               font-size: 17px;
+               color: $white;
+               @media (max-width: 1024px) {
+                  font-size: 14px;
+               }
+            }
+         }
+      }
+      &-schedule{
+         h4{
+            color: $white;
+            font-size: 22px;
+            font-family: $Barlow;
+            font-weight: 700;
+         }
+      }
+      &-listing{
+         padding-top: 30px;
+         li{
+            font-size: 17px;
+            font-family: $Rubik;
+            color: $white;
+            margin-bottom: 20px;
+            @media (max-width: 1024px) {
+               font-size: 14px;
+            }
+         }
+      }
+      &-img1{
+         position: absolute;
+         bottom: 0;
+         right: 40px;
+         z-index: 2;
+         @include mq(xl){
+            display: none;
+         }
+      }
+      &-circle{
+         position: absolute;
+         bottom: -175px;
+         right: 0;
+         width: 320px;
+         height: 320px;
+         background: $theme-yellow;
+         border-radius: 50%;
+         @include mq(xl){
+            z-index: 0;
+         }
+         @include mq(md){
+            display: none;
+         }
+      }
+      &-schedule{
+         position: relative;
+         padding: 40px;
+         padding-top: 0;
+         @include mq(lg){
+            padding-left: 0;
+         }
+         &::before{
+            content: "";
+            height: 430px;
+            width: 94%;
+            position: absolute;
+            top: -79px;
+            background-color: rgb(255, 255, 255);
+            opacity: 0.11;
+            margin-left: -52px;
+            @include mq(lg){
+               display: none;
+            }
+         }
+      }
+      &-top{
+         padding-bottom: 10px;
+      }
+      &-bottom{
+         position: relative;
+         padding: 30px 0;
+         &::before{
+            content: "";
+            height: 1px;
+            width: 100%;
+            border-top: 1px solid rgb(213, 234, 251);
+            opacity: 0.141;
+            top: 0;
+            left: 0;
+            z-index: 3;
+            position: absolute;
+         }
+      }
+      &-copyText{
+         font-size: 17px;
+         color: $white;
+         margin-bottom: 0;
+         @include mq(xl){
+            font-size: 15px;
+         }
+         @include mq(md){
+            margin-bottom: 30px;
+         }
+      }
+      &-menu{
+         display: flex;
+         gap: 28px;
+         justify-content: right;
+         @include mq(md){
+            justify-content: start;
+            flex-wrap: wrap;
+            gap: 10px;
+         }
+         li{
+            a{
+               font-size: 17px;
+               color: $white;
+               @include mq(xl) {
+                  font-size: 14px;
+               }
+            }
+         }
+      }
+   }
+}
+
+
+@media screen and (max-width: 800px) {
+   .container {
+      // padding: 0px 53px;
+  }
+}

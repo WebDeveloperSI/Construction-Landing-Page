@@ -1,0 +1,1221 @@
+// .main-banner {
+//    overflow: hidden;
+// }
+
+/*
+
+
+---------------------
+HERO HOMEPAGE ONE
+---------------------
+*/
+.main-banner {
+   background: url('/assets/img/hero/bg-shape.png');
+   background-position: bottom center;
+   background-repeat: no-repeat;
+   width: 100%;
+   height: 859px !important;
+
+   .chiled-main-banner {
+      width: 85%;
+      margin: 0 auto;
+      background: url('/assets/img/hero/c.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center center;
+      height: 700px;
+
+      .bg-color {
+         width: 100%;
+         height: 100%;
+         background: rgba(0, 0, 0, 0.574);
+      }
+   }
+
+   .banner-wrapper {
+      display: flex;
+      justify-content: space-between;
+      width: 1366px;
+      margin: 0 auto;
+
+      .banner-left {
+         width: 50%;
+
+         .banner-text {
+            margin-top: 168px;
+
+            .banner-p {
+               color: $theme-yellow;
+               text-decoration: underline;
+               font-size: 22px;
+               font-weight: 600;
+               margin-bottom: 10px;
+               font-family: $Roboto;
+            }
+
+            .banner-Heading {
+               font-size: 66px;
+               color: $white;
+               margin-bottom: 10px;
+               font-weight: bold;
+               font-family: $Barlow;
+            }
+
+            .banner-paragraph {
+               font-size: 17px;
+               color: $white;
+               margin-bottom: 30px;
+               font-family: $Rubik;
+               margin-right: 150px;
+            }
+
+            .bannerBtn {
+               color: $white;
+               background: $theme-yellow;
+               font-size: 17px;
+               padding: 12px 30px;
+               border-radius: 100px;
+
+               i {
+                  margin-left: 5px;
+               }
+            }
+         }
+      }
+
+      .baner-right {
+         width: 50%;
+         display: flex;
+         justify-content: center;
+
+         img {
+            margin-top: 32px;
+            width: 631px;
+         }
+      }
+   }
+}
+
+.videoPopup {
+   position: absolute;
+}
+
+
+.video-main::before {
+   content: "";
+   width: 50px;
+   height: 50px;
+   background: $white;
+   border-radius: 50%;
+   top: 0;
+   left: 0;
+   position: absolute;
+   animation: playbtn 1.3s ease-out infinite;
+   z-index: 1;
+
+}
+
+@keyframes playbtn {
+   0% {
+      transform: scale(0);
+      opacity: 1;
+   }
+
+   30% {
+      transform: scale(1.5);
+      opacity: 0, 8;
+   }
+
+   50% {
+      transform: scale(2.3);
+      opacity: 0.6;
+   }
+
+   100% {
+      transform: scale(3);
+      opacity: 0;
+   }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.hero {
+   &__area {
+      background-image: url('../img/hero/c.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      margin: 0 110px;
+      position: relative;
+
+      @include mq(xll) {
+         margin: 0;
+      }
+
+      &::before {
+         content: "";
+         position: absolute;
+         left: 0;
+         top: 0;
+         width: 100%;
+         height: 100%;
+         background-color: rgba(0, 0, 0, .5);
+      }
+
+      &-shape1 {
+         position: absolute;
+         right: 0;
+         top: 66px;
+
+         @media (max-width:1752px) {
+            top: 55px;
+         }
+
+         @include mq(xll) {
+            width: 50%;
+            top: auto;
+            bottom: 0;
+         }
+
+         @include mq(md) {
+            width: 60%;
+         }
+
+         @include mq(sm) {
+            width: 77%;
+            top: auto;
+            bottom: 0;
+         }
+      }
+
+      &-shape2 {
+         position: absolute;
+         left: 0;
+         bottom: -233px;
+         z-index: -2;
+         width: 100%;
+
+         @media (max-width:1790px) {
+            bottom: -348px;
+         }
+
+         @media (max-width:1752px) {
+            bottom: -337px;
+         }
+
+         @include mq(xll) {
+            bottom: -432px;
+         }
+
+         @include mq(xl) {
+            bottom: 0;
+         }
+
+         @include mq(sm) {
+            bottom: 0;
+         }
+      }
+
+      &-content {
+         padding: 226px 0;
+         position: relative;
+         z-index: 9;
+
+         @include mq(xll) {
+            padding: 226px 60px;
+         }
+
+         @include mq(xl) {
+            padding: 200px 40px;
+         }
+
+         @include mq(sm) {
+            padding: 99px 15px;
+         }
+      }
+
+      &-subtitle {
+         font-size: 22px;
+         font-weight: 700;
+         color: $theme-yellow;
+         font-family: $Roboto;
+         display: inline-block;
+         padding-bottom: 10px;
+         text-decoration: underline;
+         text-underline-offset: 5px;
+
+         @include mq(xl) {
+            font-size: 20px;
+         }
+
+         @include mq(md) {
+            font-size: 16px;
+         }
+      }
+
+      &-title {
+         font-size: 70px;
+         font-weight: bold;
+         font-style: normal;
+         text-align: left;
+         color: $white;
+         font-family: $Barlow;
+         padding-bottom: 10px;
+
+         @media (max-width:1775px) {
+            font-size: 65px;
+         }
+
+         @include mq(xl) {
+            font-size: 50px;
+         }
+
+         @include mq(md) {
+            font-size: 30px;
+         }
+      }
+
+      &-dis {
+         font-size: 17px;
+         font-weight: 400;
+         font-style: normal;
+         text-align: left;
+         color: $white;
+         font-family: $Rubik;
+         max-width: 530px;
+         margin-bottom: 35px;
+      }
+
+      &-video {
+         display: flex;
+         align-items: center;
+         gap: 45px;
+         max-width: 704px;
+
+         p {
+            font-size: 25px;
+            font-weight: 700;
+            color: $white;
+            font-family: $Barlow;
+
+            @include mq(md) {
+               font-size: 18px;
+            }
+         }
+      }
+
+      &-icon {
+         display: flex;
+         display: inline-block;
+         width: 255px;
+         height: 158px;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         background-color: $primaryColor;
+         margin-left: 55px;
+
+         @include mq(sm) {
+            height: auto;
+            background-color: transparent;
+         }
+      }
+   }
+}
+
+/*
+---------------------
+HERO HOMEPAGE TWO
+---------------------
+*/
+
+.contoll {
+   &__hero {
+      background-image: url('../img/hero/hero-two.jpg');
+      background-repeat: no-repeat;
+      padding: 330px 0;
+      position: relative;
+      background-size: cover;
+      background-position: center;
+
+      @include mq(xl) {
+         padding: 200px 0;
+      }
+
+      @include mq(sm) {
+         padding: 50px 0;
+      }
+
+      &-content {
+         max-width: 700px;
+         padding-top: 100px;
+      }
+
+      &-subtitle {
+         font-size: 22px;
+         color: $theme-yellow;
+         font-weight: 700;
+         font-family: $Roboto;
+         display: inline-block;
+         padding-bottom: 20px;
+
+         @include mq(xl) {
+            font-size: 18px;
+            padding-bottom: 10px;
+         }
+      }
+
+      &-title {
+         font-size: 68px;
+         font-weight: 700;
+         font-family: $Barlow;
+         color: $white;
+         margin-bottom: 10px;
+
+         br {
+            @include mq(sm) {
+               display: none;
+            }
+         }
+
+         @include mq(xl) {
+            font-size: 40px;
+         }
+
+         @include mq(sm) {
+            font-size: 30px;
+         }
+
+         span {
+            color: $theme-yellow;
+         }
+      }
+
+      &-dis {
+         font-size: 17px;
+         color: $white;
+         margin-bottom: 30px;
+      }
+
+      &-img1 {
+         position: absolute;
+
+         &.imgh1 {
+            top: 253px;
+            left: 974px;
+
+            @include mq(xl) {
+               left: 523px;
+            }
+
+            @include mq(lg) {
+               display: none;
+            }
+         }
+
+         &.imgh2 {
+            top: 575px;
+            left: 945px;
+
+            @include mq(xl) {
+               left: 465px;
+            }
+
+            @include mq(lg) {
+               display: none;
+            }
+         }
+
+         &.imgh3 {
+            bottom: 50px;
+            left: 900px;
+
+            @include mq(xl) {
+               display: none;
+            }
+         }
+      }
+   }
+}
+
+/*
+---------------------
+HERO HOMEPAGE THREE
+---------------------
+*/
+.contoll__hero-content.contolll-content {
+   .contoll__hero-title {
+      @media (max-width:1400px) {
+         font-size: 50px;
+
+         @include mq(xl) {
+            font-size: 45px;
+         }
+
+         @include mq(lg) {
+            font-size: 53px;
+         }
+
+         @include mq(lg) {
+            font-size: 40px;
+         }
+
+         @media(max-width:375px) {
+            font-size: 31px;
+         }
+
+      }
+   }
+}
+
+.contolll {
+   &__hero {
+      background-image: url('../img/home-3/hero-main-bg.png');
+      background-repeat: no-repeat;
+      background-size: cover;
+      padding-top: 250px;
+      padding-bottom: 250px;
+      position: relative;
+
+      @include mq(xl) {
+         padding-top: 160px;
+         padding-bottom: 160px;
+      }
+
+      @include mq(lg) {
+         padding-top: 80px;
+         padding-bottom: 125px;
+      }
+
+      &-subtitle {
+         font-size: 22px;
+         color: rgb(255, 94, 20);
+         font-weight: 700;
+         font-family: "Roboto", sans-serif;
+         display: inline-block;
+         padding-bottom: 20px;
+         text-decoration: underline;
+      }
+
+      &-dis {
+         font-size: 17px;
+         color: #636363;
+         padding-top: 10px;
+         padding-bottom: 20px;
+         font-family: $Rubik;
+      }
+
+      &-frameImg {
+         position: absolute;
+         right: 165px;
+         bottom: -10px;
+
+         @media (max-width:1500px) {
+            right: 20px;
+         }
+
+         @media (max-width:1360px) {
+            width: 43%;
+         }
+
+         @media (max-width:767px) {
+            display: none;
+         }
+
+      }
+   }
+
+   &__brand {
+      padding: 100px 0;
+      border-bottom: 1px solid rgb(221, 221, 221);
+      padding-bottom: 85px !important;
+   }
+}
+
+/*
+---------------------
+HERO HOMEPAGE FOUR
+---------------------
+*/
+
+.contollll {
+   &__header {
+      .header__bottom-nav>li>a {
+         color: $white;
+      }
+
+      .contolll__header-logo {
+         &::before {
+            display: none;
+         }
+      }
+
+      .contolll__header-lang .nice-select.lan {
+         color: $white;
+      }
+
+      .nice-select .option {
+         color: $primaryColor;
+      }
+   }
+
+   &__hero {
+      background: $dark-two;
+      padding-top: 345px;
+      padding-bottom: 210px;
+      position: relative;
+
+      &-title {
+         font-family: $Barlow;
+         font-weight: 700;
+         font-size: 70px;
+         color: $white;
+         text-transform: capitalize;
+      }
+
+      &-title2 {
+         font-family: $Barlow;
+         font-weight: 700;
+         font-size: 70px;
+         color: $primaryColor;
+         -webkit-text-stroke: 2px $theme-yellow;
+         padding-bottom: 15px;
+      }
+
+      &-dis {
+         font-size: 17px;
+         color: $white;
+         padding-bottom: 30px;
+      }
+
+      &-mainImg {
+         position: absolute;
+         top: 239px;
+         right: 179px;
+         z-index: 2;
+         padding: 60px 0;
+      }
+   }
+}
+
+.home4bannerimg {
+   position: absolute;
+   top: 229px;
+}
+
+/*
+---------------------
+HERO HOMEPAGE FIVE
+---------------------
+*/
+
+.contolllll {
+   &__hero {
+      background-image: url('../img/home-5/hero-5.jpg');
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      padding-top: 370px;
+      padding-bottom: 330px;
+      position: relative;
+      z-index: 2;
+
+      &-wrapper {
+         text-align: center;
+         position: relative;
+      }
+
+      &-title {
+         font-family: $Barlow;
+         font-size: 70px;
+         font-weight: 700;
+         color: $white;
+         padding-bottom: 10px;
+      }
+
+      &-dis {
+         font-size: 17px;
+         color: $white;
+         padding-bottom: 15px;
+      }
+
+      &-ab {
+         position: absolute;
+         top: -45px;
+         left: 170px;
+         z-index: -2;
+
+         @include mq(md) {
+            display: none;
+         }
+      }
+   }
+}
+
+// Responsive screen size 1500px
+
+
+@media screen and (max-width: 1500px) {
+   .contollll__hero-mainImg {
+      right: 20px;
+   }
+
+}
+
+
+@media screen and (max-width: 1440px) {
+   .home4bannerimg {
+      position: absolute;
+      top: 165px;
+   }
+
+   .contollll__we-top {
+      position: absolute;
+      right: 29px !important;
+      z-index: 9 !important;
+      width: 400px;
+   }
+
+   .contollll__service-left::before {
+      width: 0px !important;
+      height: 750px;
+      content: "";
+      position: absolute;
+      left: 0;
+      top: -100px;
+      background: rgb(255, 94, 20);
+      z-index: -2;
+   }
+
+   .contoll__contact-item {
+      background: rgb(3, 44, 91);
+      border-radius: 21px;
+      padding-top: 70px;
+      padding-bottom: 70px;
+      padding-left: 30px;
+      padding-right: 30px;
+      margin-bottom: 80px;
+      margin-left: 157px !important;
+   }
+
+   .contollll__contact::before {
+      width: 0px !important;
+   }
+}
+
+
+// Responsive screen size 1300px
+
+@media screen and (max-width: 1300px) {
+   .chiled-main-banner {
+      width: 100% !important;
+
+      .bg-color {
+         .banner-wrapper {
+            width: 100%;
+            padding: 0px 40px;
+         }
+      }
+
+   }
+
+   .contollll__hero-mainImg {
+      right: 1px;
+   }
+
+}
+
+@media screen and (max-width: 1200px) {
+   .contoll__contact-item {
+      background: rgb(3, 44, 91);
+      border-radius: 21px;
+      padding-top: 70px;
+      padding-bottom: 70px;
+      padding-left: 60px;
+      padding-right: 60px;
+      margin-bottom: 80px;
+      margin-left: 0px !important;
+   }
+
+   .home1banner img {
+      margin-top: 125px !important;
+      width: 631px;
+   }
+
+   .home4bannerimg {
+      position: absolute;
+      top: 382px !important;
+   }
+
+   .contoll__baner-title {
+      font-size: 25px;
+      margin-left: 106px !important;
+   }
+
+   .contollll__hero-title {
+      font-size: 51px;
+   }
+
+   .contolllll__hero-ab {
+      left: 95px;
+   }
+
+   .chiled-main-banner {
+      width: 100% !important;
+
+      .bg-color {
+         .banner-wrapper {
+            width: 100%;
+            padding: 0px 40px;
+
+            .banner-left {
+               .banner-Heading {
+                  font-size: 40px !important;
+               }
+            }
+
+            .baner-right {
+               width: 50%;
+
+               img {
+                  width: 100%;
+               }
+            }
+         }
+      }
+
+   }
+
+   .contollll__hero-mainImg {
+      right: 1px;
+      width: 400px;
+      top: 532px;
+   }
+
+}
+
+.hed-main {
+   display: flex;
+   align-items: center;
+   position: absolute;
+   bottom: -65px;
+   right: 0;
+
+   &-left {
+      position: absolute;
+      left: -33px;
+
+      &-title {
+         width: 100px;
+         height: 100px;
+         line-height: 85px;
+         background: $theme-yellow;
+         text-align: center;
+         border-radius: 50%;
+         color: $white;
+         border: 5px solid $white;
+      }
+
+      &-paragraph {
+         font-size: 32px;
+         color: #fff;
+         font-family: "Barlow", sans-serif;
+         font-weight: bold;
+         position: absolute;
+         bottom: 47px;
+         left: 112px;
+      }
+   }
+}
+
+@media screen and (max-width: 1024px) {
+   .home4bannerimg {
+      position: absolute;
+      top: 352px !important;
+   }
+
+   .home5-hero-img {
+      display: none !important;
+   }
+
+   .contolllll__hero-title {
+      font-size: 51px;
+   }
+}
+
+@media screen and (max-width: 992px) {
+   .main-banner {
+      height: auto !important;
+      margin-top: -170px;
+   }
+
+   .contolllll__hero {
+      padding-top: 170px;
+      padding-bottom: 230px;
+   }
+
+   .contoll__baner-title {
+      margin-left: 0px !important;
+   }
+
+
+
+   .home4bannerimg {
+      display: none !important;
+   }
+
+   .chiled-main-banner {
+      width: 100% !important;
+
+
+      .bg-color {
+         .banner-wrapper {
+            display: block;
+            width: 100%;
+            padding: 0px 40px;
+            height: auto !important;
+
+            .banner-left {
+               width: 100%;
+               margin: 60px 30px;
+
+               .banner-p {
+                  padding-top: 50px;
+               }
+
+               .banner-Heading {
+                  font-size: 40px !important;
+
+               }
+            }
+
+            .baner-right {
+               width: 30%;
+               margin: 0 auto;
+
+               img {
+                  width: 100%;
+               }
+            }
+         }
+      }
+
+   }
+
+
+   .contollll__hero-mainImg {
+      right: 42px;
+      padding: 60px 0;
+      width: 356px;
+      bottom: -299px;
+   }
+
+   .contollll__hero-title {
+      font-size: 48px;
+   }
+
+   .contollll__hero-title2 {
+      font-size: 45px;
+   }
+
+   .contollll__hero-dis {
+      font-size: 15px;
+   }
+
+   .contollll__hero {
+      background: rgb(3, 23, 46);
+      padding-top: 250px;
+      padding-bottom: 130px;
+   }
+
+   .contollll__hero-mainImg {
+      top: 215px;
+   }
+
+   .contolllll__hero-ab {
+      left: 4px;
+   }
+
+}
+
+@media screen and (max-width: 991px) {
+   .contoll__contact-img {
+      display: none;
+   }
+}
+
+@media screen and (max-width: 990px) {
+   .contoll__hero {
+      padding: 50px 0px 140px;
+   }
+
+
+}
+
+@media screen and (max-width: 950px) {
+   .contolllll__hero-ab {
+      display: none;
+   }
+
+   .contolllll__hero {
+      padding-top: 100px;
+   }
+
+}
+
+@media screen and (max-width: 800px) {
+   .contollll__hero-mainImg {
+      display: none;
+   }
+
+}
+
+@media screen and (max-width: 768px) {
+   .main-banner {
+      height: auto !important;
+      // background-image: none;
+      margin-top: -170px;
+   }
+
+   .chiled-main-banner {
+      width: 100% !important;
+
+
+      .bg-color {
+         .banner-wrapper {
+            display: block;
+            width: 100%;
+            padding: 0px 40px;
+            height: auto !important;
+
+            .banner-left {
+               width: 100%;
+               margin: 60px 30px;
+               padding-top: 56px;
+
+               .banner-p {
+                  padding-top: 50px;
+               }
+
+               .banner-Heading {
+                  font-size: 40px !important;
+
+               }
+            }
+
+            .baner-right {
+               width: 30%;
+               margin: 0 auto;
+
+               img {
+                  width: 100%;
+                  margin-bottom: 30px;
+               }
+            }
+         }
+      }
+
+   }
+
+   .contolll__hero-frameImg {
+      display: none;
+   }
+
+   .contollll__hero {
+      padding-top: 100px;
+   }
+
+   .contolllll__hero-title {
+      font-size: 48px;
+   }
+
+   .contolllll__hero {
+      padding-bottom: 125px;
+   }
+
+}
+
+
+@media screen and (max-width: 576px) {
+   .main-banner {
+      height: auto !important;
+      // background-image: none;
+      margin-top: -170px;
+   }
+
+   .contoll__baner-title {
+      margin-left: 0px !important;
+   }
+
+   .contoll__baner-title {
+      margin-left: 0px;
+      text-align: center;
+   }
+
+
+   .contollll__hero-wrapper {
+      text-align: center;
+   }
+
+   .chiled-main-banner {
+      width: 100% !important;
+
+
+      .bg-color {
+         .banner-wrapper {
+            display: block;
+            width: 100%;
+            padding: 0px 20px;
+            height: auto !important;
+
+            .banner-left {
+               width: 100%;
+               margin: 60px 30px;
+
+               .banner-p {
+                  padding-top: 50px;
+                  margin-right: 0 !important;
+                  font-size: 13px !important;
+               }
+
+               .banner-Heading {
+                  font-size: 32px !important;
+
+               }
+            }
+
+            .baner-right {
+               width: 40%;
+
+               img {
+                  width: 100%;
+               }
+            }
+         }
+      }
+
+   }
+
+   .contolllll__hero-title {
+      font-size: 40px;
+   }
+
+}
+
+@media screen and (max-width: 425px) {
+   .banner-left {
+      padding-left: 0px !important;
+      margin-left: 0px !important;
+      text-align: center;
+   }
+
+   .main-banner .banner-wrapper .banner-left .banner-text .banner-paragraph {
+      margin: 30px 0px;
+   }
+   .chiled-main-banner .bg-color .banner-wrapper .banner-left .banner-p {
+      margin-top: -50px !important;
+  }
+
+   .hero__area-video {
+      padding: 25px;
+   }
+
+   .index__about .about-paragraph {
+      font-size: 15px;
+      font-family: "Rubik", sans-serif !important;
+      padding-right: 0px !important;
+   }
+
+   .index__about-left span {
+      text-align: center !important;
+      max-width: 100% !important;
+      width: 100% !important;
+   }
+
+   .section-title-wrapper.text-start {
+      max-width: 343px !important;
+      text-align: center !important;
+   }
+
+   .why-row .w-left {
+      width: 100% !important;
+      margin: 0 auto;
+      text-align: center;
+      padding: 40px 7px !important;
+   }
+
+   .index__why-content {
+      display: none;
+   }
+
+   .index__why-dis {
+      display: none;
+   }
+
+   .index__why-left .primary-btn {
+      display: none;
+   }
+
+   .contoll__hero-content {
+      padding-top: 60px;
+      text-align: center;
+   }
+
+   .contoll__service-item span {
+      text-align: center;
+   }
+   .contoll__about-thumb1 img {
+      margin: auto;
+      display: flex; 
+  }
+  .contoll__about-bottom {
+   text-align: center;
+}
+}
+
+
+@media screen and (max-width: 400px) {
+   .contoll__hero-content.contolll-content .contoll__hero-title {
+      font-size: 32px;
+   }
+
+   .contolll__hero-subtitle {
+      font-size: 17px;
+   }
+
+   .contolll__hero-dis {
+      font-size: 12px;
+   }
+
+   .contollll__hero-title {
+      font-size: 35px;
+   }
+
+   .contollll__hero-title2 {
+      font-size: 35px;
+   }
+
+   .contolllll__hero-title {
+      font-size: 28px;
+   }
+
+   .contolllll__hero-dis {
+      font-size: 13px;
+   }
+
+   .chiled-main-banner .bg-color .banner-wrapper .baner-right {
+      display: none;
+   }
+
+}

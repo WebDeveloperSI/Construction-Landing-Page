@@ -1,0 +1,52 @@
+@mixin btn {
+    background-color: #333;
+    text-decoration: none;
+    color: $white;
+    padding: 5px 15px;
+    text-transform: capitalize;
+}
+
+@mixin border($borderStyle,$borderWidth,$borderColor,$borderRadius) {
+    border-style: $borderStyle;
+    border-width: $borderWidth;
+    border-color: $borderColor;
+    border-radius: $borderRadius;
+}
+
+// using each 
+@mixin title {
+    font-size: 25px;
+}
+@each $i in (one,two,three,four) {
+    .section_#{$i}{
+        @include title;
+    }
+}
+
+@mixin mq($value) {
+    @if $value == 'xs' {
+        @media(max-width:320px){
+            @content;
+        }
+    }@else if($value == 'sm'){
+        @media(max-width:576px){
+            @content;
+        }
+    }@else if($value == 'md'){
+        @media(max-width:768px){
+            @content;
+        }
+    }@else if($value == 'lg'){
+        @media(max-width:991px){
+            @content;
+        }
+    }@else if($value == 'xl'){
+        @media (max-width:1200px){
+            @content;
+        }
+    }@else if($value == 'xll'){
+        @media (max-width:1500px){
+            @content;
+        }  
+    }
+}

@@ -1,0 +1,340 @@
+.about {
+   &__hero {
+      padding-top: 235px;
+      padding-bottom: 180px;
+      background-image: url('../img/inner/bred-crumb-bg.png');
+      background-size: cover;
+      margin-top: -60px;
+      position: relative;
+
+      @include mq(md) {
+         padding-top: 50px;
+      }
+
+      &-title {
+         font-family: $Barlow;
+         font-size: 60px;
+         font-weight: 700;
+         color: $text-2;
+         text-transform: capitalize;
+
+         @include mq(md) {
+            font-size: 30px;
+         }
+      }
+
+      &-list {
+         margin-top: 20px;
+         background: $white;
+         border-radius: 50px;
+         padding: 10px 20px;
+         display: inline-block;
+
+         li {
+            font-size: 17px;
+            display: inline-block;
+
+            a {
+               text-transform: capitalize;
+               color: $text-3;
+               display: block;
+            }
+         }
+      }
+
+      &-active {
+         color: $theme-yellow !important;
+      }
+
+      &-bg {
+         position: absolute;
+         bottom: 0;
+         right: 230px;
+
+         @include mq(xll) {
+            right: 0;
+         }
+
+         @include mq(xl) {
+            max-width: 600px;
+         }
+
+         @include mq(md) {
+            max-width: 350px;
+         }
+      }
+   }
+}
+
+.error {
+   &__page {
+      padding-bottom: 100px;
+      padding-top: 100px;
+      border-bottom: 1px solid #ddd;
+      margin-bottom: 100px;
+
+      @include mq(md) {
+         padding-top: 50px;
+         padding-bottom: 50px;
+      }
+
+      &-wrapper {
+         text-align: center;
+      }
+
+      &-thumb {
+         margin-bottom: 35px;
+
+         img {
+            max-width: 100%;
+         }
+      }
+
+      &-title {
+         font-family: $Barlow;
+         font-size: 35px;
+         font-weight: 700;
+         padding-bottom: 10px;
+      }
+
+      &-dis {
+         font-size: 17px;
+         padding-bottom: 10px;
+      }
+   }
+}
+
+.service {
+   &__detailsinner {
+      padding-top: 100px;
+
+      &-wrapper {
+         padding-bottom: 100px;
+      }
+
+      &-thumb {
+         margin-bottom: 50px;
+
+         img {
+            border-radius: 13px;
+         }
+      }
+
+      &-listdetail {
+         li {
+            margin-bottom: 20px;
+            font-family: $Barlow;
+            font-weight: 700;
+            color: $text-1;
+            font-size: 22px;
+            transition: all linear .3s;
+
+            &:hover {
+               i {
+                  background: $theme-yellow;
+               }
+            }
+
+            i {
+               height: 30px;
+               width: 30px;
+               display: inline-block;
+               background: $primaryColor;
+               color: $white;
+               text-align: center;
+               line-height: 30px;
+               border-radius: 50px;
+               margin-right: 20px;
+
+            }
+         }
+      }
+
+      &-detail1 {
+         padding-bottom: 70px;
+         overflow: hidden;
+      }
+
+      &-right {
+         position: relative;
+
+         img {
+            border-radius: 13px;
+         }
+      }
+
+      &-circle {
+         border-radius: 50%;
+         width: 391px;
+         height: 391px;
+         border: 10px solid $white;
+         background: $theme-yellow;
+         display: flex;
+         justify-content: center;
+         position: absolute;
+         right: -195px;
+         top: 0;
+         padding-left: 120px;
+
+         p {
+            color: $white;
+            font-size: 17px;
+            transform: rotate(270deg);
+            direction: ltr;
+            text-align: center;
+         }
+      }
+
+      &-lgdis {
+         font-size: 16px;
+         color: $text-3;
+      }
+   }
+}
+.team__innerteam-left {
+   width: 60%;
+   margin: auto;
+   margin-bottom: 35px;
+}
+.serviceDetails {
+   margin-bottom: 60px;
+
+   p {
+      font-size: 16px;
+      font-family: $Rubik;
+      color: $text-3;
+   }
+}
+
+.service__detailsinner-thumb img {
+   width: 100%;
+}
+
+.project__innerdetails-thumb img {
+   width: 100%;
+}
+
+.project {
+   &__innerdetails {
+      padding-top: 100px;
+
+      &-left {
+         max-width: 575px;
+      }
+
+      &-list1 {
+         li {
+            padding-bottom: 20px;
+            font-size: 18px;
+            font-weight: 600;
+
+            img {
+               padding-right: 10px;
+            }
+         }
+      }
+
+      &-title {
+         font-size: 22px;
+         font-weight: 700;
+         font-family: $Barlow;
+         padding-bottom: 20px;
+      }
+
+      &-thumb {
+         padding: 50px 0;
+      }
+
+      p {
+         font-size: 17px;
+         font-family: $Rubik;
+         color: $text-3
+      }
+   }
+}
+
+.team {
+   &__innerteam {
+      padding: 130px 0;
+
+      &-social {
+         display: flex;
+         align-items: center;
+         margin-bottom: 25px;
+         border: 1px solid rgb(221, 221, 221);
+         border-radius: 50px;
+         padding: 10px 40px;
+      }
+
+      &-list {
+         li {
+            margin-bottom: 25px;
+            border: 1px solid rgb(221, 221, 221);
+            border-radius: 50px;
+            padding: 10px 40px;
+         }
+      }
+
+      &-stitle {
+         font-family: $Barlow;
+         font-size: 22px;
+         color: $text-1;
+         font-weight: 700;
+         display: block;
+         margin-bottom: 20px;
+      }
+
+      .index__footer-fsocial {
+         padding-top: 0;
+      }
+   }
+}
+.team__innerteam-left img {
+   width: 100%;
+}
+
+@media screen and (max-width: 1024px) {
+   .about__hero-title {
+      font-size: 55px;
+   }
+}
+
+@media screen and (max-width: 992px) {
+   .n-service-banner {
+      padding-top: 120px !important;
+   }
+
+   .about__hero {
+      padding-top: 135px;
+   }
+}
+
+@media screen and (max-width: 768px) {
+   .service-hero-contoll {
+      text-align: center !important;
+
+      .service-hero-titleN {
+         font-size: 36px;
+      }
+   }
+}
+
+@media screen and (max-width: 576px) {
+   .about__hero-content {
+      text-align: center;
+      margin-bottom: 23px;
+   }
+   .contoll__baner-item {
+      text-align: center;
+      margin-top: 30px;
+  }
+
+   .about__hero {
+      padding-top: 62px;
+   }
+
+   .about__hero-title {
+      font-size: 38px !important;
+   }
+
+}

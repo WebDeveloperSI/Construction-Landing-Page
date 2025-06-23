@@ -1,0 +1,40 @@
+ /*
+ ---------------------
+  BACKGROUND-COLOR VARIABLES
+ ---------------------
+ */
+$primaryColor: rgba(3, 44, 91, 1);
+$secondaryColor: rgb(243, 38, 38);
+$theme-yellow: rgba(255, 94, 20, 1);
+$offwhite: rgb(236, 243, 248);
+$dark-two: rgb(3, 23, 46);
+
+ /*
+ ---------------------
+  TEXT-COLOR VARIABLES
+ ---------------------
+ */
+
+$white: #fff;
+$text-1:#333333;
+$text-2: #18181c;
+$text-3: #636363;
+.dark-two{
+   background: $dark-two;
+}
+.dark-three{
+   background: $primaryColor !important;
+}
+
+ /*
+ ---------------------
+  BACKGROUND-COLOR VARIABLES
+ ---------------------
+ */
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700;800&family=Roboto:wght@400;500;700&family=Rubik:wght@400;500;600;700&display=swap');
+
+
+$Barlow: 'Barlow', sans-serif;
+$Roboto: 'Roboto', sans-serif;
+$Rubik : 'Rubik', sans-serif;

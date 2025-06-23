@@ -1,0 +1,288 @@
+ /*
+ ---------------------
+   HOMEPAGE NOTIFICATION 01
+ ---------------------
+ */
+
+
+ .videoplay::before {
+    content: "";
+    width: 50px;
+    height: 50px;
+    background: $white;
+    border-radius: 50%;
+    top: -5%;
+    left: 48.7%;
+    position: absolute;
+    animation: played 1.3s ease-out infinite;
+
+ }
+
+ @keyframes played {
+    0% {
+       transform: scale(0);
+       opacity: 1;
+    }
+
+    30% {
+       transform: scale(1.5);
+       opacity: 0, 8;
+    }
+
+    50% {
+       transform: scale(2.3);
+       opacity: 0.6;
+    }
+
+    100% {
+       transform: scale(3);
+       opacity: 0;
+    }
+ }
+
+
+ .index {
+    &__notification {
+       background-image: url('../img/notification/bg-img.jpg');
+       background-repeat: no-repeat;
+       background-size: cover;
+       position: relative;
+       z-index: 3;
+       padding: 130px 0;
+
+       &::before {
+          content: "";
+          height: 100%;
+          width: 100%;
+          background-color: rgba(3, 44, 91, 0.808);
+          position: absolute;
+          left: 0;
+          top: 0;
+          z-index: -2;
+       }
+
+       &-video {
+          text-align: center;
+       }
+
+       &-title {
+          font-family: $Barlow;
+          font-weight: 700;
+          font-size: 40px;
+          color: $white;
+          margin-bottom: 30px;
+       }
+
+       &-dis {
+          font-size: 17px;
+          font-family: $Rubik;
+          color: $white;
+          margin-bottom: 40px;
+       }
+
+       &-hator {
+          position: absolute;
+          left: 75px;
+          top: -200px;
+
+          @include mq(md) {
+             top: -100px;
+             width: 150px;
+          }
+       }
+
+       &-homeSide {
+          position: absolute;
+          bottom: -258px;
+          right: 100px;
+       }
+
+       &-wrapper {
+          text-align: center;
+          max-width: 775px;
+          margin: auto;
+          margin-top: -210px;
+       }
+
+       .video {
+          height: 160px;
+          width: 160px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background-color: $theme-yellow;
+          border: 10px solid $white;
+          margin: auto;
+          margin-bottom: 50px;
+
+          i {
+             display: inline-block;
+             width: 35px;
+             height: 35px;
+             background-color: $white;
+             color: $theme-yellow;
+             border-radius: 50%;
+             line-height: 35px;
+             text-align: center;
+          }
+       }
+    }
+
+    &__notification2 {
+       position: relative;
+       padding: 75px 0;
+       overflow: hidden;
+       z-index: 3;
+       background: $primaryColor;
+
+       &::before {
+          content: "";
+          position: absolute;
+          left: 0;
+          top: 0;
+          height: 100%;
+          width: 56%;
+          background-color: $theme-yellow;
+          z-index: -2;
+          border-top: 122px solid transparent;
+          border-bottom: 120px solid transparent;
+          border-right: 121px solid $primaryColor;
+       }
+
+       &-title {
+          font-size: 34px;
+          font-weight: 700;
+          font-family: $Barlow;
+          color: $white;
+       }
+
+       &-group {
+          position: absolute;
+          bottom: -50px;
+          left: 0;
+          max-width: 360px;
+          z-index: -1;
+       }
+
+       &-right {
+          text-align: center;
+          float: right;
+       }
+    }
+ }
+
+
+ // start the 1200px responsive code
+
+ @media screen and (max-width: 1440px) {
+    .videoplay::before {
+       top: -5%;
+       left: 48.3%;
+    }
+ }
+
+
+ @media screen and (max-width: 1200px) {
+    .index__notification-hator {
+       display: none;
+    }
+
+    .index__notification-homeSide {
+       display: none;
+    }
+
+    .videoplay::before {
+       top: -5%;
+       left: 48%;
+    }
+ }
+
+ @media screen and (max-width: 1024px) {
+    .videoplay::before {
+       top: -5%;
+       left: 47.6%;
+    }
+
+ }
+
+ @media screen and (max-width: 992px) {
+    .contoll__baner::before {
+       width: 74% !important;
+    }
+ }
+
+ @media screen and (max-width: 768px) {
+    .videoplay::before {
+       left: 46.7%;
+    }
+ }
+
+ @media screen and (max-width: 576px) {
+    .videoplay::before {
+       content: "";
+       width: 50px;
+       height: 50px;
+       background: #fff;
+       border-radius: 50%;
+       top: -4%;
+       left: 42.7%;
+       position: absolute;
+       animation: played 1.3s ease-out infinite;
+    }
+
+    .videoplay::before {
+       top: -4%;
+       left: 45.7%;
+    }
+
+    .index__notification-title {
+       font-size: 30px;
+    }
+
+    .index__notification2-title {
+       font-size: 22px;
+       text-align: center;
+       margin-bottom: 32px;
+    }
+
+    .index__notification2-right {
+       text-align: center;
+       width: 100%;
+    }
+ }
+
+ @media screen and (max-width: 425px) {
+    .videoplay::before {
+       top: -4%;
+       left: 44.3%;
+    }
+
+    .contoll__faq-content {
+       display: none;
+    }
+
+    .contolll__testimonial-bwrapper {
+       margin-top: 0px;
+    }
+
+    .contolll__about-item {
+       text-align: center;
+    }
+
+    .contolll__we-item {
+       text-align: center;
+    }
+
+    .contolll__testimoniall-item {
+       padding-left: 15px !important;
+       padding-right: 15px !important;
+    }
+
+    .contolll__service-pdis {
+       text-align: center;
+    }
+
+    .contolll__service-btnwrap {
+       text-align: center;
+    }
+ }
